@@ -30,9 +30,10 @@ function costoTotale(percorrenzaKm, etàViaggiatore) {
         risultatoScontato = risultato - (risultato / 100 * 20);
 
     else
-        return risultato;
+        return risultato.toFixed(2);
 
-    return risultatoScontato;
+    return risultatoScontato.toFixed(2);
+
 }
 
 document.getElementById("am_cost").innerHTML = "Prezzo del biglietto " + costoTotale(percorrenzaKm, etàViaggiatore);
